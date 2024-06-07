@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "static/css/estilo_consultas.css">
+    <title>Agendamento de Consultas</title>
+</head>
+<body>
+    <header>
+        <img src = "static/img/logo.png" alt = "Logo da Dog Dodói" />
+        <div class="menu">
+            <a href = "/pacientes">
+                <button type = "button" class = "botao" style="background-color: rgba(83, 120, 164, 0.76); color: white; border: none;">INSERÇÃO DE PACIENTES</button>
+            </a>
+ 
+            <p class="frase">COMPROMETIDOS COM A SAÚDE E FELICIDADE DE SEU PET!</p>
+           
+            <a href = "/agendamento_consultas">
+                <button type = "button" class = "botao" style="background-color: rgba(83, 120, 164, 0.76); color: white; border: none;">AGENDAMENTO DE CONSULTAS</button>
+            </a>
+        </div>
+    </header>,
+    <div class="linha"></div>
+ 
+    <div class="fundo">
+        <nav class="espacamento">
+            <form action = "/idade_humana">
+                <button type = "submit" class = "botao"; style="background-color: #D3DDE9; color: #405077; border: none;">CALCULADORA (IDADE HUMANA DO ANIMAL)</button>
+            </form>
+            <form action = "/medicamento">
+                <button type = "submit" class = "botao"; style="background-color: #D3DDE9; color: #405077; border: none;">CALCULADORA (MILIGRAMAS/PESO CORPORAL DO MEDICAMENTO)</button>
+            </form>
+            <form action = "/quantidade_mililitros_soro">
+                <button type = "submit" class = "botao"; style="background-color: #D3DDE9; color: #405077; border: none;">CALCULADORA (MILILITROS DE SORO)</button>
+            </form>
+        </nav>
+    </div>
+    <div class="linha"></div>
+    <h1>AGENDAMENTO DE CONSULTAS</h1>
+    <form class="formulario" action="/verificar_agendamento_consultas" method="POST">
+        
+        <label for="nome">Nome do animal:</label>
+        <input type="text" id="nome" name="nome">
+        <br> </br>
+        <label for="nome_tutor">Nome do tutor:</label>
+        <input type="text" id="nome_tutor" name="nome_tutor">
+        <br> </br>
+        <label for="data">Data:</label>
+        <input type="date" id="data" name="data">
+        <br> </br>
+        <label for="horario">Horário:</label>
+        <input type="time" id="horario" name="horario">
+        <br> </br>
+        <label for="sintomas">Sintomas do animal:</label>
+        <input type="text" id="sintomas" name="sintomas">
+        <br> </br>
+        <button class="botao1" type="submit">PRONTO</button>
+        
+    </form>
+    <div class="fundo_rodape" style="padding-top: 55px;">
+        <div>
+            <img style = "width: 350px; padding-left: 50px;" src = "static/img/localizacao.png" alt = "Localização"/>
+        </div>
+        <div>
+            <img style = "width: 250px; padding-left: 40px;" src = "static/img/instagram.png" alt = "Instagram"/>
+            <img style = "width: 250px; padding-left: 40px;" src = "static/img/facebook.png" alt = "Facebook"/>
+        </div>
+        <div>
+            <img src = "static/img/whatsapp.png" alt = "WhatsApp"/>
+            <img src = "static/img/telefone.png" alt = "Telefone"/>
+        </div>
+            <img class="img_rod" src = "static/img/rodape.png" alt = "Imagem de Animais"/>
+    </div>
+ 
+    <footer>
+        <p>© Clínica Veterinária Dog Dodói - Todos os direitos reservados | Desenvolvido por: Gabriela F. Jesuino, Maria Eduarda G. dos Santos, Giovana B. Pereira e Ana Luiza Pereira</p>
+    </footer>
+ </body>
+ </html>
